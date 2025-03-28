@@ -1,0 +1,242 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-image: url('child.jpg'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    color: white;
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 200px;
+}
+
+.logo img {
+    height: 150px;
+    width: auto; /* Adjust the height as needed */
+}
+
+/* Navigation Bar */
+nav {
+    position: absolute;
+    top: 80px; /* Moves navigation slightly downward */
+    right: 200px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Navigation Buttons (Now Simple and Blended with Header) */
+.nav-btn {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.rainbow-banner {
+    background-image:
+url('clr.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 5px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.intro-text {
+    text-align: center;
+    width: 100%;
+    max-width: 1515px;
+    margin: 0;
+    padding-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    padding: 5px 10%;
+}
+
+.intro-text p {
+    max-width: 800px;
+    text-align: center;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    margin-bottom: 22px;
+    padding: 10px 20px;
+    background-color: #ea00ff;
+
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.learn-more-btn:hover {
+    background-color: hsl(300, 86%, 73%);
+}
+
+/* Page Content */
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+.aim-section {
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0; /* Removes background and padding */
+}
+
+/* Section Title */
+.aim-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Custom Bullets */
+.aim-section ul {
+    list-style: none; /* Removes default bullets */
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.aim-section li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+    font-weight: 500;
+}
+
+/* Custom Checkmark Bullet */
+.aim-section li::before {
+    content: "✔"; /* Custom bullet */
+    position: absolute;
+    left: 0;
+    color: #ff00dd; /* Highlight color */
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.connect-with-us, .get-in-touch {
+    margin: 10px;
+}
+
+.connect-with-us h3, .get-in-touch h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 8px;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+.get-in-touch p {
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+.get-in-touch a {
+    color: white;
+    text-decoration: none;
+}
+
+.get-in-touch a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    width: 100%;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        height: 300px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        position: static;
+        margin-top: 10px;
+    }
+
+    .nav-btn {
+        font-size: 14px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
